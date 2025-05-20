@@ -40,7 +40,7 @@ $dp[i][j] = min\{dp[i-1][k]+C|k-j|+D|j-a_i|\}$
 
 打表之后确实是凸的，那么考虑slope trick。
 
-设$f_i(x)=dp[i][x]$，$g_i(x)=min{f_i(y)+C|y-x|}$。
+设$f_i(x)=dp[i][x]$，$g_i(x)=min\{f_i(y)+C|y-x|\}$。
 
 则$f_i(x)=g_{i-1}(x)+D|x-a_i|$
 
